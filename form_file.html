@@ -35,7 +35,7 @@
             </div>
             <div class="form_container">
                 <h2 id="form_cta">Let's do this!</h2>
-                <form action="submit">
+                <form action="submit" id="form1">
 
 
                     <div class="form-inputs">
@@ -61,16 +61,16 @@
                         </div>
                         <div class="form_password_confirm">
                             <label for="password_confirm">*Confirm Password</label>
-                            <input type="password" id="password_confirm" name="password_confirm" class="error-border"
-                                required>
+                            <input type="password" id="password_confirm" name="password_confirm" required>
                         </div>
                     </div>
 
-                    <div class="action-section">
-                        <button class="btn" type="submit">Create Account</button>
-                        <div class="login-cta">Already have an account? <a href="url">Log in</a></div>
-                    </div>
+
                 </form>
+            </div>
+            <div class="action-section">
+                <button class="btn" type="submit" form="form1">Create Account</button>
+                <div class="login-cta">Already have an account? <a href="url">Log in</a></div>
             </div>
 
 
