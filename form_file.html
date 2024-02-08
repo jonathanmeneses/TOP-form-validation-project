@@ -7,6 +7,7 @@
     <title>Sign up form</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src='script.js' defer></script>
 </head>
 
 <body>
@@ -37,43 +38,42 @@
                 <form action="submit">
 
 
-                    <div class="form_first_name>
-                        <label for=" first_name">First Name</label>
-                        <input type="text" id="first_name" name="first_name">
-                    </div>
-                    <div class="form_last_name">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name" name="last_name">
+                    <div class="form-inputs">
+                        <div class="form_first_name>
+                            <label for=" first_name">*First Name</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        <div class="form_last_name">
+                            <label for="last_name">*Last Name</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                        <div class="form_email">
+                            <label for="email">*Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form_phone">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form_password">
+                            <label for="password">*Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form_password_confirm">
+                            <label for="password_confirm">*Confirm Password</label>
+                            <input type="password" id="password_confirm" name="password_confirm" class="error-border"
+                                required>
+                        </div>
                     </div>
 
-                    <div class="form_email">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                    <div class="action-section">
+                        <button class="btn" type="submit">Create Account</button>
+                        <div class="login-cta">Already have an account? <a href="url">Log in</a></div>
                     </div>
-
-                    <div class="form_phone">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-
-                    </div>
-
-                    <div class="form_password">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-                    <div class="form_password_confirm">
-                        <label for="password_confirm">Confirm Password</label>
-                        <input type="password" id="password_confirm" name="password_confirm">
-                    </div>
-
-
                 </form>
             </div>
 
-            <div class="action-section">
-                <button class="btn">Create Account</button>
-                <div>Already have an account? <a href="url">Log in</a></div>
-            </div>
+
 
         </div>
     </div>

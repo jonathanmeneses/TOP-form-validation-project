@@ -83,6 +83,7 @@
 
 form {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     background-color: white;
     gap: 30px;
@@ -120,6 +121,11 @@ button {
     border: 1px darkgrey;
     padding: 15px 25px;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(160, 160, 160);
+}
+
+button:active {
+    background: #79a6a0;
 }
 
 #description {
@@ -137,4 +143,28 @@ button {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.error-border {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: inherit;
+    font-size: inherit;
+    gap: 30px;
+}
+
+.login-cta {
+    display: block;
+    text-transform: none;
 }
